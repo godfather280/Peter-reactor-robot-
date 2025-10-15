@@ -1,0 +1,14 @@
+services:
+  - type: worker
+    name: telegram-reaction-bot
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: API_ID
+        value: your_api_id_here
+      - key: API_HASH
+        value: your_api_hash_here
+      - key: PHONE_NUMBER
+        value: your_phone_number_here
+      - key: SESSION_FILE
+        value: my_session
