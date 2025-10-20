@@ -291,7 +291,7 @@ if __name__ == '__main__':
         except Exception as e:
             logger.error(f"Bot crashed: {e}")
             logger.info("Restarting in 10 seconds...")
-            time.sleep(10)￼Enter        @self.client.on(events.NewMessage(pattern=r'\.react'))
+            time.sleep(10)     @self.client.on(events.NewMessage(pattern=r'\.react'))
         async def react_handler(event):
             """Start reacting to user's messages"""
             if not await self.is_admin(event):
